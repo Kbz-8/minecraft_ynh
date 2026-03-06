@@ -28,6 +28,20 @@ services = ["__APP__"]
         help = "Choose the maximum number of players on your server."
         bind = "max-players:__INSTALL_DIR__/server.properties"
 
+        [main.config.view_distance]
+        ask = "Max view distance"
+        type = "number"
+        default = 16
+        help = "Choose the maximum view distance."
+        bind = "view-distance:__INSTALL_DIR__/server.properties"
+
+        [main.config.difficulty]
+        ask = "Difficulty"
+        type = "string"
+        default = "easy"
+        help = "Choose difficulty."
+        bind = "difficulty:__INSTALL_DIR__/server.properties"
+
         [main.config.motd]
         ask = "MOTD"
         type = "string"
