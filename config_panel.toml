@@ -37,8 +37,9 @@ services = ["__APP__"]
 
         [main.config.difficulty]
         ask = "Difficulty"
-        type = "string"
-        default = "easy"
+        type = "select"
+        choices = ["peaceful", "easy", "normal", "hard"]
+        default = "normal"
         help = "Choose difficulty."
         bind = "difficulty:__INSTALL_DIR__/server.properties"
 
